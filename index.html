@@ -87,15 +87,34 @@
 			<input type="text" id="name" name="name" required><br><br>
 			<label for="birthdate">Birthdate:</label>
 			<input type="date" id="birthdate" name="birthdate"><br><br>
+            <label>Sex:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="not-specified" name="gender" value="not-specified">
+            <label for="not-specified">Do not want to answer</label><br><br>
+
+           
+
+
+            <label>Favorite Artist:</label><br>
+            <label for="Harry Styles">Harry Styles:</label>
+            <input type="checkbox" id="Harry Styles" name="artist[]" value="Harry Styles"><br><br>
+            <label for="Taylor Swift">Taylor Swift:</label>
+            <input type="checkbox" id="Taylor Swift" name="artist[]" value="Taylor Swift"><br><br>
+            <label for="Selena Gomez">Selena Gomez:</label>
+            <input type="checkbox" id="Selena Gomez" name="artist[]" value="Selena Gomez"><br><br>
+
 			<label for="interests">Interests:</label>
 			<textarea id="interests" name="interests"></textarea><br><br>
-			<label for="food">Favorite Food:</label>
+			<label for="food">Favorite Food :</label>
 			<input type="text" list="food-list" id="food" name="food" required>
 			<datalist id="food-list">
 				<option value="Pizza">
-				<option value="Burger">
-				<option value="Fries">
 				<option value="Pasta">
+				<option value="Burger">
+				<option value="Ramen">
 			</datalist><br><br>
 			<label for="country">Country:</label>
 			<select id="country" name="country">
